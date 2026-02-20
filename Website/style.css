@@ -23,14 +23,20 @@ body {
   filter: blur(80px);
   border-radius: 50%;
   z-index: 0;
-  animation: float 20s infinite alternate;
+  /* Use a smooth, looping animation (no abrupt reverse) and enable GPU
+     acceleration to avoid flicks when repeating */
+  animation: float 20s linear infinite;
+  will-change: transform;
 }
 @keyframes float {
   0% {
-    transform: translate(0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(100px, 50px, 0) scale(1.2);
   }
   100% {
-    transform: translate(100px, 50px) scale(1.2);
+    transform: translate3d(0, 0, 0) scale(1);
   }
 }
 .marquee-container {
@@ -43,10 +49,12 @@ body {
   animation: marquee 30s linear infinite;
   gap: 40px;
   width: max-content;
+  will-change: transform;
+  align-items: center;
 }
 
 .company-logo {
-  height: 75px;
+  height: 96px;
   width: auto;
   object-fit: contain;
   opacity: 0.7;
@@ -56,18 +64,75 @@ body {
   background-color: #ffffff;
 }
 
+.marquee-content .company-logo {
+  display: block;
+  flex: 0 0 auto;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+  transition: transform 180ms ease;
+}
+
+/* Lightbox styles */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+.lightbox.hidden {
+  display: none;
+}
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+}
+.lightbox-image {
+  position: relative;
+  max-width: 92vw;
+  max-height: 92vh;
+  border-radius: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  z-index: 210;
+  object-fit: contain;
+}
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 220;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
 .company-logo:hover {
   opacity: 1;
 }
 
-
 @keyframes marquee {
+  /* Use translate3d for smoother, GPU-accelerated motion. The markup
+     already duplicates items for a seamless loop, so -50% shifts by one
+     full set of items. */
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
+}
+.company-logo {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
 }
 .service-card:hover {
   transform: translateY(-8px);
@@ -90,4 +155,19 @@ body {
   background: white;
   z-index: 100;
   padding: 2rem;
+}
+
+/* Logo styles */
+.nav-logo,
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.footer-logo {
+  height: 48px;
+  width: 48px;
+  filter: brightness(1.1);
 }
