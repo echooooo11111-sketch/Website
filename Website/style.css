@@ -167,8 +167,7 @@ body {
 .service-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(180deg, #1AA1A8 0%, #158F96 100%);
-
+  
 }
 
 /* Custom Scrollbar */

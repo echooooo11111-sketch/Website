@@ -11,9 +11,16 @@
 
     <!-- External Libraries Whitelist -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("8mkUIAoEKAYCeABYV");
+        })();
+    </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
+
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -545,365 +552,407 @@
         </div>
       </div>
     </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-32 bg-white">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-20">
-          <h2 class="text-4xl md:text-6xl font-black text-white text-slate-900 mb-6">
-            Our Services
-          </h2>
-          <p class="text-slate-500 text-lg  text-white max-w-2xl mx-auto">
-            Comprehensive printing solutions tailored to your brand's unique
-            requirements.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Service Card 1 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect width="18" height="18" x="3" y="3" rx="2" />
-                <path d="M3 9h18" />
-                <path d="M9 21V9" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">
-              Offset Print
-            </h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Brochures & Catalogues
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5  rounded-full bg-teal-500"></span>
-                Flyers and Leaflets
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Conference Folders
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service Card 2 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-30  hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
-                <path d="M4 6v12c0 1.1.9 2 2 2h14v-4" />
-                <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4Z" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">Gifting Ads</h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span> Mug &
-                T-Shirt Print
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Personalized Diaries
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Tumblers 
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service Card 3 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-30 hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                <circle cx="9" cy="7" r="4" />
-                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">
-              Identification
-            </h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Lanyard Printing
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Sublimation Lanyards
-              </li>
-             
-            </ul>
-          </div>
-
-          <!-- Service Card 4 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-30 hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <rect width="20" height="14" x="2" y="3" rx="2" />
-                <line x1="8" x2="16" y1="21" y2="21" />
-                <line x1="12" x2="12" y1="17" y2="21" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">
-              Digital & Outdoor
-            </h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Van/Truck Stickers
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Rollup & Metal Stands
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Stainless Standees
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service Card 5 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-30 hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" />
-                <line x1="3" x2="21" y1="6" y2="6" />
-                <path d="M16 10a4 4 0 0 1-8 0" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">
-              Custom Items
-            </h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Jackets & Tote Bags
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Laptop Sleeves & Mats
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span> Face
-                Masks & Aprons
-              </li>
-            </ul>
-          </div>
-
-          <!-- Service Card 6 -->
-          <div
-            class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white"
-          >
-            <div
-              class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="m12 14 4-4" />
-                <path d="M3.34 19a10 10 0 1 1 17.32 0" />
-              </svg>
-            </div>
-            <h3 class="text-2xl font-black text-slate-900 mb-4">
-              Specialty Work
-            </h3>
-            <ul class="space-y-3 text-slate-500 font-medium">
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Custom Embroidery
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Acrylic Led Lamps
-              </li>
-              <li class="flex items-center gap-2">
-                <span class="w-1.5 h-1.5 rounded-full bg-teal-500"></span>
-                Leather Trays
-              </li>
-            </ul>
-          </div>
-        </div>
-       <!-- Bottom Image Card -->
-         <div class="md:col-span-2 lg:col-span-3 mt-20">
-              <div class="bg-slate-100 rounded-[2.5rem] p-12">
-    
-               <div class="grid md:grid-cols-2 items-center gap-12">
   
-             <!-- LEFT SIDE (Text Area) -->
-               <div>
-                <h3 class="text-3xl font-black text-slate-900 mb-6">
-                  Gifting Ads
-                </h3>
+    <!--SERVICES-->
+   <section id="services" class="py-32 bg-white">
+  <div class="container mx-auto px-6">
+    <div class="text-center mb-20">
+      <h2 class="text-4xl md:text-6xl font-black text-white text-slate-900 mb-6">Our Services</h2>
+      <p class="text-slate-500 text-lg text-white max-w-2xl mx-auto">Comprehensive printing solutions tailored to your brand's unique requirements.</p>
+    </div>
 
-                <p class="text-slate-600 mb-8 leading-relaxed">
-                  Personalized promotional items perfect for corporate gifts and marketing campaigns.
-                </p>
-
-                 <h4 class="text-teal-600 font-semibold mb-4">
-                 Available Items:
-                </h4>
-
-                <div class="grid grid-cols-2 gap-x-12 gap-y-3 text-slate-600">
-    
-                 <!-- Left Column -->
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                 Mug Print
-              </div>
-
-               <div class="flex items-center gap-2">
-               <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                T-Shirt, Polo Shirt Print
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                Cap Print
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                 Pen Set
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                 Personalized Diary
-              </div>
-
-                 <div class="flex items-center gap-2">
-                 <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                  Tumblers
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                  Foldable Fan
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                   Flash Drive
-              </div>
-
-                <div class="flex items-center gap-2">
-                <span class="w-2 h-2 bg-teal-500 rounded-full"></span>
-                    Button Pins
-                 </div>
-
-                  </div>
-              </div>
-
-               <!-- RIGHT SIDE (Image Area) -->
-               <div class="bg-white rounded-3xl p-6 shadow-lg">
-               <img 
-                    src="MUG.jpg" 
-                    alt="Preview Image"
-                    class="rounded-2xl w-full h-auto object-cover"
-                   />
-               
-                    <div class="text-center mt-6">
-                 <h4 class="text-xl font-bold text-slate-900">
-                     Mug Sample
-                 </h4>
-                 <p class="text-slate-500 mt-2">
-                     Preview with Boxhub branding
-                    </p>
-                 </div> 
-             </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       
+      <div onclick="toggleService('details-offset')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M3 9h18" /><path d="M9 21V9" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Offset Print</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+
+      <div onclick="toggleService('details-gifting')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" /><path d="M4 6v12c0 1.1.9 2 2 2h14v-4" /><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4Z" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Gifting Ads</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+
+      <div onclick="toggleService('details-id')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Identification</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+
+      <div onclick="toggleService('details-digital')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Digital & Outdoor</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+
+      <div onclick="toggleService('details-custom')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><line x1="3" x2="21" y1="6" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Custom Items</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+
+      <div onclick="toggleService('details-specialty')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
+        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg>
+        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Embroidery</h3>
+        <p class="text-slate-500 font-medium">Click to see more →</p>
+      </div>
+    </div>
+
+    <div id="details-offset" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+    
+    <button onclick="toggleService('details-offset')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">Offset Print</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          High-quality brochures, catalogs, flyers, and leaflets with professional finishing. Perfect for bulk orders and high-precision branding.
+        </p>
+        
+        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Brochures & Catalogue</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Flyers and Leaflets</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Conference Folder</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Calling Cards</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Letterheads</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Envelopes</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="brochures.jpg" alt="Brochures Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Brochure Sample</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="flyers.jpg" alt="Flyers Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Flyers and Leaflets</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div id="details-gifting" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+        <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+          
+          <button onclick="toggleService('details-gifting')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h3 class="text-3xl font-black text-slate-900 mb-6">Gifting Ads</h3>
+              <p class="text-slate-600 mb-8 leading-relaxed">
+                Personalized promotional items perfect for corporate gifts and marketing campaigns.
+              </p>
+              
+              <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Mug Print</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> T-Shirt, Polo Shirt Print</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Cap Print</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Pen Set</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Personalized Diary</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Tumblers</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Foldable Fan</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Flash Drive</div>
+                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Button Pins</div>
+              </div>
             </div>
 
+          <div class="flex flex-col gap-6 h-full">
+  
+             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+             <div class="bg-slate-50 rounded-xl p-4 mb-4">
+             <img src="MUG.jpg" alt="Mug Sample" class="rounded-lg w-full h-auto object-cover" />
           </div>
-
+              <h4 class="text-xl font-bold text-slate-900">Mug Sample</h4>
+               <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
          </div>
-       </div>
+
+             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+             <div class="bg-slate-50 rounded-xl p-4 mb-4">
+             <img src="cap.jpg" alt="Cap Sample" class="rounded-lg w-full h-auto object-cover" />
+         </div>
+             <h4 class="text-xl font-bold text-slate-900">Cap Sample</h4>
+             <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
+         </div>
+
+             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+             <div class="bg-slate-50 rounded-xl p-4 mb-4">
+             <img src="Tshirt.jpg" alt="T-Shirt Sample" class="rounded-lg w-full h-auto object-cover" />
+         </div>
+             <h4 class="text-xl font-bold text-slate-900">T-Shirt Sample</h4>
+             <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
+         </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+
+    <div id="details-id" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+    
+    <button onclick="toggleService('details-id')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">Identification</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          Professional ID solutions for schools and businesses. High-quality PVC cards and customized lanyards with vibrant, long-lasting prints.
+        </p>
+        
+        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Lanyard Print (Full Color)
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> PVC ID Printing
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> ID Case / Holders
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Sublimation Lanyard
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="lanyard.jpg" alt="Lanyard Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Standard Lanyard</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="sublanyard.jpg" alt="Sublimation Lanyard" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Sublimation Lanyard</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Premium Full Color Design</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+     <div id="details-digital" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+    
+    <button onclick="toggleService('details-digital')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">Digital Print</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          Modern digital printing solutions for vehicles and custom applications. High-quality outdoor signage and banners.
+        </p>
+        
+        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+        
+        <div class="grid grid-cols-1 gap-y-3 text-slate-600 font-medium">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Van / Trucks Stickers
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-[2rem] p-12 shadow-lg border border-slate-100 flex flex-col items-center justify-center text-center min-h-[300px]">
+        <div class="w-20 h-20 bg-teal-50 rounded-full flex items-center justify-center mb-6">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#0d9488" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+        </div>
+        <p class="text-slate-500 font-medium text-lg leading-relaxed">
+          Contact us to see samples <br> of these products
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+<div id="details-custom" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+    
+    <button onclick="toggleService('details-custom')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">Custom Items</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          Tailor-made products designed specifically for your brand. From office essentials to personalized lifestyle gear and apparel.
+        </p>
+        
+        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-slate-600 font-medium text-sm">
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Jacket</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Bags</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Tote Bag / Eco Bag</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Pouch / Coin Purse</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Leather Tray</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Acrylic Led Lamp</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Laptop Sleeve / Cover</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Laptop Mat / Mouse Pad</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Facemask / Tube mask</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Arm sleeve</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Robe</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Apron</div>
+          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Scrub Suit</div>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="laptopmats.jpg" alt="Laptop Mat Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Laptop Bags & Mats</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Premium Branding</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="tote.jpg" alt="Tote Bag Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Jacket & Tote Bags Sample</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Eco-friendly Design</p>
+        </div>
+
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img src="maskaprons.jpg" alt="Masks and Aprons Sample" class="rounded-lg w-full h-auto object-cover" />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Face Masks & Aprons</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">Custom Facemasks & Aprons</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+     <div id="details-specialty" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
+  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
+    
+    <button onclick="toggleService('details-specialty')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h3 class="text-3xl font-black text-slate-900 mb-6">Embroidery</h3>
+        <p class="text-slate-600 mb-8 leading-relaxed">
+          Premium embroidery and specialized crafting solutions. We provide high-precision stitching for apparel and unique personalized items.
+        </p>
+        
+        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
+        
+        <div class="grid grid-cols-1 gap-y-3 text-slate-600 font-medium">
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Computerized Embroidery
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Patch Making
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Acrylic LED Crafts
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Leather Crafts
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
+          <div class="bg-slate-50 rounded-xl p-4 mb-4">
+            <img 
+              src="embroidery.jpg" 
+              alt="Embroidery Sample" 
+              class="rounded-lg w-full h-auto object-cover" 
+            />
+          </div>
+          <h4 class="text-xl font-bold text-slate-900">Embroidery Sample</h4>
+          <p class="text-slate-500 text-sm mt-1 font-medium">High-Precision Stitching</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  function toggleService(id) {
+    const allDetails = document.querySelectorAll('.service-detail');
+    const target = document.getElementById(id);
+
+    // 1. Isara muna ang lahat (Para isa lang ang bukas at iwas gulo)
+    allDetails.forEach(detail => {
+      if (detail.id !== id) {
+        detail.classList.add('max-h-0', 'opacity-0');
+        detail.classList.remove('max-h-[2000px]', 'opacity-100');
+      }
+    });
+
+    // 2. I-toggle yung pinindot mo
+    if (target.classList.contains('max-h-0')) {
+      // BUKAS
+      target.classList.remove('max-h-0', 'opacity-0');
+      target.classList.add('max-h-[2000px]', 'opacity-100');
+      // Smooth Scroll
+      setTimeout(() => {
+        target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }, 400);
+    } else {
+      // SARA
+      target.classList.add('max-h-0', 'opacity-0');
+      target.classList.remove('max-h-[2000px]', 'opacity-100');
+    }
+  }
+</script>
 
     <!-- Clients Section -->
     <section id="clients" class="py-32 bg-slate-900 overflow-hidden">
@@ -1061,181 +1110,72 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-32 bg-white">
+
+    <!--CONTACT -->
+    <section id="contact" class="py-32">
       <div class="container mx-auto px-6">
-        <div
-          class="bg-teal-600 rounded-[4rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl shadow-teal-900/20"
-        >
-          <div
-            class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"
-          ></div>
+        <div class="bg-teal-600 rounded-[4rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl shadow-teal-900/20">
+          <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
 
           <div class="grid lg:grid-cols-2 gap-20 relative z-10">
             <div>
-              <h2 class="text-4xl md:text-7xl font-black mb-8 leading-tight">
-                Ready to start your project?
-              </h2>
+              <h2 class="text-4xl md:text-7xl font-black mb-8 leading-tight">Ready to start your project?</h2>
               <p class="text-teal-50 text-xl mb-12 opacity-90 leading-relaxed">
-                Contact us today for a quick quote. We'll help you pick the
-                right materials and finish for your project.
+                Contact us today for a quick quote. We'll help you pick the right materials and finish.
               </p>
 
               <div class="space-y-10">
                 <div class="flex items-center gap-6">
-                  <div
-                    class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
-                      />
-                    </svg>
+                  <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                   </div>
                   <div>
-                    <p
-                      class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1"
-                    >
-                      Call Us
-                    </p>
+                    <p class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1">Call Us</p>
                     <p class="font-black text-2xl">02-70062614</p>
                   </div>
                 </div>
                 <div class="flex items-center gap-6">
-                  <div
-                    class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect width="20" height="16" x="2" y="4" rx="2" />
-                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-                    </svg>
+                  <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
                   </div>
                   <div>
-                    <p
-                      class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1"
-                    >
-                      Email Us
-                    </p>
+                    <p class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1">Email Us</p>
                     <p class="font-black text-2xl">boxhubjandv@gmail.com</p>
-                  </div>
-                </div>
-                <div class="flex items-center gap-6">
-                  <div
-                    class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="28"
-                      height="28"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <path
-                        d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"
-                      />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p
-                      class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1"
-                    >
-                      Visit Us
-                    </p>
-                    <p class="font-bold text-lg">
-                      #5 San Roque St. Jonaville Subd. Novaliches, QC
-                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div
-              class="bg-white rounded-[3rem] p-10 md:p-12 text-slate-900 shadow-2xl"
-            >
+            <div class="bg-white rounded-[3rem] p-10 md:p-12 text-slate-900 shadow-2xl">
               <h3 class="text-3xl font-black mb-8">Send a Message</h3>
               <form class="space-y-6" id="contact-form">
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label
-                      class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
-                      >Full Name</label
-                    >
-                    <input
-                      type="text"
-                      required
-                      class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
-                      placeholder="John Doe"
-                    />
+                    <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Full Name</label>
+                    <input name="from_name" type="text" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="John Doe" />
                   </div>
                   <div>
-                    <label
-                      class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
-                      >Email Address</label
-                    >
-                    <input
-                      type="email"
-                      required
-                      class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
-                      placeholder="john@example.com"
-                    />
+                    <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Email Address</label>
+                    <input name="reply_to" type="email" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="john@example.com" />
                   </div>
                 </div>
                 <div>
-                  <label
-                    class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
-                    >Service Interest</label
-                  >
-                  <select
-                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium appearance-none"
-                  >
-                    <option>Offset Printing</option>
-                    <option>Gifting Ads</option>
-                    <option>Custom Items</option>
-                    <option>Outdoor Branding</option>
+                  <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Service Interest</label>
+                  <select name="service_interest" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium appearance-none">
+                    <option value="Offset Printing">Offset Printing</option>
+                    <option value="Gifting Ads">Gifting Ads</option>
+                    <option value="Identification">Identification</option>
+                    <option value="Digital & Outdoor">Digital & Outdoor</option>
+                    <option value="Custom Items">Custom Items</option>
+                    <option value="Embroidery">Embroidery</option>
                   </select>
                 </div>
                 <div>
-                  <label
-                    class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
-                    >Project Details</label
-                  >
-                  <textarea
-                    rows="4"
-                    required
-                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
-                    placeholder="Tell us about your requirements..."
-                  ></textarea>
+                  <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Project Details</label>
+                  <textarea name="message" rows="4" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="Tell us about your requirements..."></textarea>
                 </div>
-                <button
-                  type="submit"
-                  class="w-full bg-teal-600 hover:bg-teal-700 text-white font-black text-xl py-6 rounded-2xl transition-all shadow-xl shadow-teal-100 transform hover:-translate-y-1"
-                >
-                  Send Inquiry
+                <button id="submit-btn" type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-black text-xl py-6 rounded-2xl transition-all shadow-xl shadow-teal-100 transform hover:-translate-y-1 flex items-center justify-center">
+                  <span id="btn-text">Send Inquiry</span>
                 </button>
               </form>
             </div>
@@ -1243,6 +1183,46 @@
         </div>
       </div>
     </section>
+
+    <script>
+        const btn = document.getElementById('submit-btn');
+        const btnText = document.getElementById('btn-text');
+        const contactForm = document.getElementById('contact-form');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // UI Loading State
+            btnText.innerHTML = '<span class="loading-spinner"></span> Sending...';
+            btn.disabled = true;
+            btn.style.opacity = "0.7";
+
+            const serviceID = 'service_ophdsbp';
+            const templateID = 'template_sqcj8tm';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    // UI Success State
+                    btnText.innerText = 'Inquiry Sent Successfully!';
+                    btn.classList.replace('bg-teal-600', 'bg-green-600');
+                    btn.style.opacity = "1";
+                    contactForm.reset();
+                    
+                    setTimeout(() => {
+                        btnText.innerText = 'Send Inquiry';
+                        btn.disabled = false;
+                        btn.classList.replace('bg-green-600', 'bg-teal-600');
+                    }, 5000);
+                }, (err) => {
+                    // UI Error State
+                    btnText.innerText = 'Error Sending';
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                    btn.classList.replace('bg-teal-600', 'bg-red-600');
+                    console.error("EmailJS Error:", err);
+                });
+        });
+    </script>
    
    
 
@@ -1379,30 +1359,7 @@
 
       menuClose.addEventListener("click", closeMenu);
 
-      // Form Submission Mockup
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", (e) => {
-          e.preventDefault();
-          const btn = e.target.querySelector("button");
-          const originalText = btn.innerText;
-
-          btn.disabled = true;
-          btn.innerText = "Sending...";
-
-          setTimeout(() => {
-            btn.innerText = "Message Sent!";
-            btn.classList.replace("bg-teal-600", "bg-emerald-500");
-            e.target.reset();
-
-            setTimeout(() => {
-              btn.innerText = originalText;
-              btn.classList.replace("bg-emerald-500", "bg-teal-600");
-              btn.disabled = false;
-            }, 3000);
-          }, 1500);
-        });
-
+     
       // Intersection Observer for Animations
       const observerOptions = {
         threshold: 0.1,
