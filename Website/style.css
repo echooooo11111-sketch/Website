@@ -22,8 +22,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.3);
 }
 
 .navbar .logo-box {
@@ -41,11 +39,6 @@ body {
   width: 100%;
   height: 100%;
   color: white;
-}
-
-.logo-box:hover {
-  transform: rotate(12deg) scale(1.05);
-  box-shadow: 0 6px 20px rgba(13, 148, 136, 0.4);
 }
 
 /* Glassmorphism Navigation */
@@ -151,23 +144,20 @@ body {
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
-
 /* Services */
 
 #services {
-  background: linear-gradient(180deg, #1AA1A8 0%, #158F96 100%);
+  background: linear-gradient(180deg, #1aa1a8 0%, #158f96 100%);
 }
-
 
 /* Service Cards */
 .service-card {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);  
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .service-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
-  
 }
 
 /* Custom Scrollbar */
@@ -181,7 +171,6 @@ body {
   background: #0d9488;
   border-radius: 10px;
 }
-
 
 /* Mobile Menu */
 #mobile-menu {
