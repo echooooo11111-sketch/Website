@@ -9,22 +9,31 @@
     />
     <title>Boxhub Printing Services</title>
 
-     
     <!-- External Libraries Whitelist -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
     <script type="text/javascript">
-        (function() {
-            emailjs.init("8mkUIAoEKAYCeABYV");
-        })();
+      (function () {
+        emailjs.init("8mkUIAoEKAYCeABYV");
+      })();
     </script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-slate-50 text-slate-900">
     <!-- Navigation -->
@@ -462,10 +471,10 @@
           <div class="grid lg:grid-cols-2 gap-20 items-center">
             <div>
               <h2
-                class="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight" 
-                
-              >Empower your Brand to
-                
+                class="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight"
+              >
+                Empower your Brand to
+
                 <span class="text-teal-600">Speak</span>
               </h2>
               <p class="text-slate-600 text-lg leading-relaxed mb-8">
@@ -554,409 +563,464 @@
         </div>
       </div>
     </section>
-  
-    <!--SERVICES-->
-   <section id="services" class="py-32 bg-white">
-  <div class="container mx-auto px-6">
-    <div class="text-center mb-20">
-      <h2 class="text-4xl md:text-6xl font-black text-white text-slate-900 mb-6">Our Services</h2>
-      <p class="text-slate-500 text-lg text-white max-w-2xl mx-auto">Comprehensive printing solutions tailored to your brand's unique requirements.</p>
-    </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <div onclick="toggleService('details-offset')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M3 9h18" /><path d="M9 21V9" /></svg>
+    <!-- MAIN SERVICES SECTION -->
+    <section class="py-24 bg-white">
+      <div class="container mx-auto px-6 max-w-7xl">
+        <div class="max-w-3xl mb-20">
+          <h2
+            class="text-5xl font-extrabold text-slate-900 mb-6 tracking-tight"
+          >
+            Our Expertise
+          </h2>
+          <p class="text-slate-500 text-xl leading-relaxed">
+            Explore our specialized printing and branding solutions. Click on
+            any service to view our full gallery of completed projects.
+          </p>
         </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Offset Print</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
 
-      <div onclick="toggleService('details-gifting')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" /><path d="M4 6v12c0 1.1.9 2 2 2h14v-4" /><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4Z" /></svg>
-        </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Gifting Ads</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
-
-      <div onclick="toggleService('details-id')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>
-        </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Identification</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
-
-      <div onclick="toggleService('details-digital')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>
-        </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Digital & Outdoor</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
-
-      <div onclick="toggleService('details-custom')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><line x1="3" x2="21" y1="6" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>
-        </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Custom Items</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
-
-      <div onclick="toggleService('details-specialty')" class="service-card group p-10 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:bg-white cursor-pointer transition-all duration-300 hover:shadow-xl active:scale-95">
-        <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-teal-600 shadow-sm mb-8 group-hover:bg-teal-600 group-hover:text-white transition-all duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg>
-        </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Embroidery</h3>
-        <p class="text-slate-500 font-medium">Click to see more →</p>
-      </div>
-    </div>
-
-    <div id="details-offset" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-    
-    <button onclick="toggleService('details-offset')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">Offset Print</h3>
-        <p class="text-slate-600 mb-8 leading-relaxed">
-          High-quality brochures, catalogs, flyers, and leaflets with professional finishing. Perfect for bulk orders and high-precision branding.
-        </p>
-        
-        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Brochures & Catalogue</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Flyers and Leaflets</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Conference Folder</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Calling Cards</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Letterheads</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Envelopes</div>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-6">
-        
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="brochures.jpg" alt="Brochures Sample" class="rounded-lg w-full h-auto object-cover" />
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Cards (Triggering Modal) -->
+          <div
+            onclick="openService('offset')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="2" />
+                <path d="M3 9h18" />
+                <path d="M9 21V9" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Offset Print</h3>
+            <p class="text-slate-500 mb-8">
+              High-precision bulk printing for corporate identity.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+              <svg
+                class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <h4 class="text-xl font-bold text-slate-900">Brochure Sample</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
-        </div>
 
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="flyers.jpg" alt="Flyers Sample" class="rounded-lg w-full h-auto object-cover" />
+          <div
+            onclick="openService('gifting')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" />
+                <path d="M4 6v12c0 1.1.9 2 2 2h14v-4" />
+                <path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4Z" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Gifting Ads</h3>
+            <p class="text-slate-500 mb-8">
+              Custom promotional items that resonate with your audience.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+              <svg
+                class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </div>
           </div>
-          <h4 class="text-xl font-bold text-slate-900">Flyers and Leaflets</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
+
+          <div
+            onclick="openService('id')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">
+              Identification
+            </h3>
+            <p class="text-slate-500 mb-8">
+              Secure and professional ID systems for organizations.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+              <svg
+                class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <!-- Digital -->
+          <div
+            onclick="openService('digital')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
+                <line x1="8" x2="16" y1="21" y2="21"></line>
+                <line x1="12" x2="12" y1="17" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">
+              Digital & Outdoor
+            </h3>
+            <p class="text-slate-500 mb-8">
+              Large format printing and outdoor branding solutions.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+            </div>
+          </div>
+
+          <!-- Custom -->
+          <div
+            onclick="openService('custom')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"
+                ></path>
+                <line x1="3" x2="21" y1="6" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Custom Items</h3>
+            <p class="text-slate-500 mb-8">
+              Bespoke lifestyle and branded merchandise.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+            </div>
+          </div>
+
+          <!-- Embroidery -->
+          <div
+            onclick="openService('embroidery')"
+            class="service-card group bg-slate-50 p-10 rounded-[3rem] cursor-pointer border border-transparent hover:border-teal-500/30"
+          >
+            <div
+              class="w-16 h-16 bg-white text-teal-600 rounded-2xl flex items-center justify-center mb-8 shadow-sm group-hover:bg-teal-600 group-hover:text-white transition-all duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="m12 14 4-4"></path>
+                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Embroidery</h3>
+            <p class="text-slate-500 mb-8">
+              High-precision stitching and textile branding.
+            </p>
+            <div class="flex items-center gap-2 text-teal-600 font-bold">
+              View Gallery
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL SYSTEM -->
+    <div
+      id="modal-overlay"
+      class="fixed inset-0 z-[100] bg-slate-950/80 opacity-0 invisible flex items-center justify-center p-4 md:p-8"
+      onclick="closeService()"
+    >
+      <div
+        id="modal-container"
+        class="bg-white w-full max-w-6xl max-h-[90vh] rounded-[3.5rem] shadow-2xl overflow-hidden flex flex-col"
+        onclick="event.stopPropagation()"
+      >
+        <!-- Modal Header -->
+        <div
+          class="flex items-center justify-between p-8 md:px-12 border-b border-slate-100"
+        >
+          <div id="modal-title-area" class="flex items-center gap-5">
+            <!-- Injected by JS -->
+          </div>
+          <button
+            onclick="closeService()"
+            class="w-12 h-12 flex items-center justify-center rounded-full bg-slate-50 text-slate-400 hover:bg-red-50 hover:text-red-500 transition-all"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M18 6 6 18" />
+              <path d="m6 6 12 12" />
+            </svg>
+          </button>
         </div>
 
+        <!-- Modal Content -->
+        <div class="modal-content-area overflow-y-auto p-8 md:p-12">
+          <div id="modal-body-content">
+            <!-- Injected by JS -->
+          </div>
+        </div>
+
+        <!-- Modal Footer -->
+        <div
+          class="p-8 bg-slate-50 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-4"
+        >
+          <p class="text-slate-500 text-sm font-medium">
+            Interested in this service? Contact our team for a custom quote.
+          </p>
+          <button
+            onclick="closeService()"
+            class="px-10 py-4 bg-slate-900 text-white font-bold rounded-2xl hover:bg-teal-600 transition-all shadow-lg shadow-slate-200"
+          >
+            Close Gallery
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-      <div id="details-gifting" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-        <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-          
-          <button onclick="toggleService('details-gifting')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
+    <!--SERVICES FUNC-->
+    <script>
+      // Service Data Repository
+      const serviceData = {
+        offset: {
+          title: "Offset Print",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><rect width="18" height="18" x="3" y="3" rx="2" /><path d="M3 9h18" /><path d="M9 21V9" /></svg>`,
+          description:
+            "Our offset printing facility delivers unmatched color accuracy and sharp detail for high-volume requirements. We specialize in premium paper stocks and custom finishes.",
+          images: [
+            "brochures.jpg",
+            "flyers.jpg",
+            "https://images.unsplash.com/photo-1517672651691-24622a91b550?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+        gifting: {
+          title: "Gifting Ads",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><path d="M20 12V8H6a2 2 0 0 1-2-2c0-1.1.9-2 2-2h12v4" /><path d="M4 6v12c0 1.1.9 2 2 2h14v-4" /><path d="M18 12a2 2 0 0 0-2 2c0 1.1.9 2 2 2h4v-4h-4Z" /></svg>`,
+          description:
+            "Transform everyday objects into powerful brand ambassadors. From executive desk sets to lifestyle apparel, we ensure your brand is remembered.",
+          images: [
+            "MUG.jpg",
+            "cap.jpg",
+            "tshirt.jpg",
+            "https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+        id: {
+          title: "Identification",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>`,
+          description:
+            "Secure, durable, and professional. Our ID solutions include high-definition PVC printing and custom-woven lanyards designed for daily wear.",
+          images: [
+            "lanyard.jpg",
+            "sublanyard.jpg",
+            "https://images.unsplash.com/photo-1622126821793-5b9d672e4303?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+        digital: {
+          title: "Digital & Outdoor",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><rect width="20" height="14" x="2" y="3" rx="2" /><line x1="8" x2="16" y1="21" y2="21" /><line x1="12" x2="12" y1="17" y2="21" /></svg>`,
+          description:
+            "High-impact large format printing for outdoor visibility. We produce durable signage, banners, and vehicle graphics built to withstand the elements.",
+          images: [
+            "https://images.unsplash.com/photo-1613909209435-248687e3039b?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1581093588401-22c1c3e7e5f4?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
 
-          <div class="grid md:grid-cols-2 gap-12 items-center">
+        custom: {
+          title: "Custom Items",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><line x1="3" x2="21" y1="6" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" /></svg>`,
+          description:
+            "Bespoke lifestyle and corporate merchandise tailored to your brand identity. Designed with precision and crafted for impact.",
+          images: [
+            "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1593032465175-481ac7f401c0?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+
+        embroidery: {
+          title: "Embroidery",
+          icon: `<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-teal-600"><path d="m12 14 4-4" /><path d="M3.34 19a10 10 0 1 1 17.32 0" /></svg>`,
+          description:
+            "Premium embroidery and detailed stitching services for uniforms, caps, and corporate apparel. Precision craftsmanship with long-lasting durability.",
+          images: [
+            "https://images.unsplash.com/photo-1613409093495-b444694034f3?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
+            "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
+          ],
+        },
+      };
+
+      function openService(key) {
+        const data = serviceData[key];
+        const overlay = document.getElementById("modal-overlay");
+        const titleArea = document.getElementById("modal-title-area");
+        const bodyContent = document.getElementById("modal-body-content");
+
+        // Set Header
+        titleArea.innerHTML = `
+            <div class="w-14 h-14 bg-teal-50 rounded-2xl flex items-center justify-center">
+                ${data.icon}
+            </div>
             <div>
-              <h3 class="text-3xl font-black text-slate-900 mb-6">Gifting Ads</h3>
-              <p class="text-slate-600 mb-8 leading-relaxed">
-                Personalized promotional items perfect for corporate gifts and marketing campaigns.
-              </p>
-              
-              <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Mug Print</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> T-Shirt, Polo Shirt Print</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Cap Print</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Pen Set</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Personalized Diary</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Tumblers</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Foldable Fan</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Flash Drive</div>
-                <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Button Pins</div>
-              </div>
+                <h3 class="text-3xl font-extrabold text-slate-900">${data.title}</h3>
+                <p class="text-teal-600 text-sm font-bold uppercase tracking-widest">Project Showcase</p>
             </div>
+        `;
 
-          <div class="flex flex-col gap-6 h-full">
-  
-             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-             <div class="bg-slate-50 rounded-xl p-4 mb-4">
-             <img src="MUG.jpg" alt="Mug Sample" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-              <h4 class="text-xl font-bold text-slate-900">Mug Sample</h4>
-               <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
-         </div>
-
-             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-             <div class="bg-slate-50 rounded-xl p-4 mb-4">
-             <img src="cap.jpg" alt="Cap Sample" class="rounded-lg w-full h-auto object-cover" />
-         </div>
-             <h4 class="text-xl font-bold text-slate-900">Cap Sample</h4>
-             <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
-         </div>
-
-             <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-             <div class="bg-slate-50 rounded-xl p-4 mb-4">
-             <img src="Tshirt.jpg" alt="T-Shirt Sample" class="rounded-lg w-full h-auto object-cover" />
-         </div>
-             <h4 class="text-xl font-bold text-slate-900">T-Shirt Sample</h4>
-             <p class="text-slate-500 text-sm mt-1">Preview with Boxhub branding</p>
-         </div>
-
+        // Set Body with Gallery Grid
+        bodyContent.innerHTML = `
+            <div class="mb-12">
+                <p class="text-slate-600 text-xl leading-relaxed max-w-3xl">${data.description}</p>
             </div>
-          </div>
-        </div>
-      </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                ${data.images
+                  .map(
+                    (img, index) => `
+                    <div class="gallery-item group relative aspect-[4/3] bg-slate-100">
+                        <img src="${img}" alt="${data.title} sample ${index + 1}" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
+                            <span class="text-white font-bold text-lg">Sample Project 0${index + 1}</span>
+                        </div>
+                    </div>
+                `,
+                  )
+                  .join("")}
+            </div>
+        `;
 
-    <div id="details-id" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-    
-    <button onclick="toggleService('details-id')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">Identification</h3>
-        <p class="text-slate-600 mb-8 leading-relaxed">
-          Professional ID solutions for schools and businesses. High-quality PVC cards and customized lanyards with vibrant, long-lasting prints.
-        </p>
-        
-        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-3 text-slate-600 font-medium">
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Lanyard Print (Full Color)
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> PVC ID Printing
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> ID Case / Holders
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Sublimation Lanyard
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-6">
-        
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="lanyard.jpg" alt="Lanyard Sample" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Standard Lanyard</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Preview with Boxhub branding</p>
-        </div>
-
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="sublanyard.jpg" alt="Sublimation Lanyard" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Sublimation Lanyard</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Premium Full Color Design</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-     <div id="details-digital" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-    
-    <button onclick="toggleService('details-digital')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">Digital Print</h3>
-        <p class="text-slate-600 mb-8 leading-relaxed">
-          Modern digital printing solutions for vehicles and custom applications. We provide high-quality outdoor signage and durable sticker solutions.
-        </p>
-        
-        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-        
-        <div class="grid grid-cols-1 gap-y-3 text-slate-600 font-medium">
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Van / Trucks Stickers
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col">
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img 
-              src="van.jpg" 
-              alt="Digital Print Sample" 
-              class="rounded-lg w-full h-auto object-cover" 
-            />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Digital Print Sample</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">High-Quality Vehicle Stickers</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-<div id="details-custom" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-    
-    <button onclick="toggleService('details-custom')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">Custom Items</h3>
-        <p class="text-slate-600 mb-8 leading-relaxed">
-          Tailor-made products designed specifically for your brand. From office essentials to personalized lifestyle gear and apparel.
-        </p>
-        
-        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-slate-600 font-medium text-sm">
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Jacket</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Bags</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Tote Bag / Eco Bag</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Pouch / Coin Purse</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Leather Tray</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Acrylic Led Lamp</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Laptop Sleeve / Cover</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Laptop Mat / Mouse Pad</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Facemask / Tube mask</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Arm sleeve</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Robe</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Apron</div>
-          <div class="flex items-center gap-2"><span class="w-2 h-2 bg-teal-500 rounded-full"></span> Scrub Suit</div>
-        </div>
-      </div>
-
-      <div class="flex flex-col gap-6">
-        
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="laptopmats.jpg" alt="Laptop Mat Sample" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Laptop Bags & Mats</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Premium Branding</p>
-        </div>
-
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="tote.jpg" alt="Tote Bag Sample" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Jacket & Tote Bags Sample</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Eco-friendly Design</p>
-        </div>
-
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img src="maskaprons.jpg" alt="Masks and Aprons Sample" class="rounded-lg w-full h-auto object-cover" />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Face Masks & Aprons</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">Custom Facemasks & Aprons</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
-     <div id="details-specialty" class="service-detail overflow-hidden max-h-0 opacity-0 transition-all duration-700">
-  <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-12 border border-slate-200 relative">
-    
-    <button onclick="toggleService('details-specialty')" class="absolute top-6 right-8 text-slate-400 hover:text-slate-900 text-2xl font-bold">✕</button>
-
-    <div class="grid md:grid-cols-2 gap-12 items-center">
-      
-      <div>
-        <h3 class="text-3xl font-black text-slate-900 mb-6">Embroidery</h3>
-        <p class="text-slate-600 mb-8 leading-relaxed">
-          Premium embroidery and specialized crafting solutions. We provide high-precision stitching for apparel and unique personalized items.
-        </p>
-        
-        <h4 class="text-teal-600 font-bold mb-4 uppercase text-sm tracking-wider">Available Items:</h4>
-        
-        <div class="grid grid-cols-1 gap-y-3 text-slate-600 font-medium">
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Computerized Embroidery
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Patch Making
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Acrylic LED Crafts
-          </div>
-          <div class="flex items-center gap-2">
-            <span class="w-2 h-2 bg-teal-500 rounded-full"></span> Leather Crafts
-          </div>
-        </div>
-      </div>
-
-      <div class="flex flex-col">
-        <div class="bg-white rounded-[2rem] p-6 shadow-lg border border-slate-100 text-center">
-          <div class="bg-slate-50 rounded-xl p-4 mb-4">
-            <img 
-              src="embroidery.jpg" 
-              alt="Embroidery Sample" 
-              class="rounded-lg w-full h-auto object-cover" 
-            />
-          </div>
-          <h4 class="text-xl font-bold text-slate-900">Embroidery Sample</h4>
-          <p class="text-slate-500 text-sm mt-1 font-medium">High-Precision Stitching</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
- </div>
-
-    </div>
-  </div>
-</section>
-
-<!--SERVICES FUNC-->
-<script>
-  function toggleService(id) {
-    const allDetails = document.querySelectorAll('.service-detail');
-    const target = document.getElementById(id);
-
-    
-    allDetails.forEach(detail => {
-      if (detail.id !== id) {
-        detail.classList.add('max-h-0', 'opacity-0');
-        detail.classList.remove('max-h-[2000px]', 'opacity-100');
+        // Show Modal
+        overlay.classList.add("active");
+        document.body.classList.add("modal-open");
       }
-    });
 
-   
-    if (target.classList.contains('max-h-0')) {
-     
-      target.classList.remove('max-h-0', 'opacity-0');
-      target.classList.add('max-h-[2000px]', 'opacity-100');
-      
-      setTimeout(() => {
-        target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }, 400);
-    } else {
-     
-      target.classList.add('max-h-0', 'opacity-0');
-      target.classList.remove('max-h-[2000px]', 'opacity-100');
-    }
-  }
-</script>
+      function closeService() {
+        const overlay = document.getElementById("modal-overlay");
+        overlay.classList.remove("active");
+        document.body.classList.remove("modal-open");
+      }
+
+      // Accessibility: Close on Escape
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeService();
+      });
+    </script>
 
     <!-- Clients Section -->
     <section id="clients" class="py-32 bg-slate-900 overflow-hidden">
@@ -1114,58 +1178,129 @@
       </div>
     </section>
 
-
     <!--CONTACT -->
     <section id="contact" class="py-32">
       <div class="container mx-auto px-6">
-        <div class="bg-teal-600 rounded-[4rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl shadow-teal-900/20">
-          <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
+        <div
+          class="bg-teal-600 rounded-[4rem] p-8 md:p-20 text-white relative overflow-hidden shadow-2xl shadow-teal-900/20"
+        >
+          <div
+            class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"
+          ></div>
 
           <div class="grid lg:grid-cols-2 gap-20 relative z-10">
             <div>
-              <h2 class="text-4xl md:text-7xl font-black mb-8 leading-tight">Ready to start your project?</h2>
+              <h2 class="text-4xl md:text-7xl font-black mb-8 leading-tight">
+                Ready to start your project?
+              </h2>
               <p class="text-teal-50 text-xl mb-12 opacity-90 leading-relaxed">
-                Contact us today for a quick quote. We'll help you pick the right materials and finish.
+                Contact us today for a quick quote. We'll help you pick the
+                right materials and finish.
               </p>
 
               <div class="space-y-10">
                 <div class="flex items-center gap-6">
-                  <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <div
+                    class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      />
+                    </svg>
                   </div>
                   <div>
-                    <p class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1">Call Us</p>
+                    <p
+                      class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1"
+                    >
+                      Call Us
+                    </p>
                     <p class="font-black text-2xl">02-70062614</p>
                   </div>
                 </div>
                 <div class="flex items-center gap-6">
-                  <div class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
+                  <div
+                    class="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-md border border-white/20"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="28"
+                      height="28"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
                   </div>
                   <div>
-                    <p class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1">Email Us</p>
+                    <p
+                      class="text-teal-200 text-xs uppercase font-black tracking-widest mb-1"
+                    >
+                      Email Us
+                    </p>
                     <p class="font-black text-2xl">boxhubjandv@gmail.com</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="bg-white rounded-[3rem] p-10 md:p-12 text-slate-900 shadow-2xl">
+            <div
+              class="bg-white rounded-[3rem] p-10 md:p-12 text-slate-900 shadow-2xl"
+            >
               <h3 class="text-3xl font-black mb-8">Send a Message</h3>
               <form class="space-y-6" id="contact-form">
                 <div class="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Full Name</label>
-                    <input name="from_name" type="text" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="John Doe" />
+                    <label
+                      class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
+                      >Full Name</label
+                    >
+                    <input
+                      name="from_name"
+                      type="text"
+                      required
+                      class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
+                      placeholder="John Doe"
+                    />
                   </div>
                   <div>
-                    <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Email Address</label>
-                    <input name="reply_to" type="email" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="john@example.com" />
+                    <label
+                      class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
+                      >Email Address</label
+                    >
+                    <input
+                      name="reply_to"
+                      type="email"
+                      required
+                      class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
+                      placeholder="john@example.com"
+                    />
                   </div>
                 </div>
                 <div>
-                  <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Service Interest</label>
-                  <select name="service_interest" class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium appearance-none">
+                  <label
+                    class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
+                    >Service Interest</label
+                  >
+                  <select
+                    name="service_interest"
+                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium appearance-none"
+                  >
                     <option value="Offset Printing">Offset Printing</option>
                     <option value="Gifting Ads">Gifting Ads</option>
                     <option value="Identification">Identification</option>
@@ -1175,10 +1310,23 @@
                   </select>
                 </div>
                 <div>
-                  <label class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider">Project Details</label>
-                  <textarea name="message" rows="4" required class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium" placeholder="Tell us about your requirements..."></textarea>
+                  <label
+                    class="block text-xs font-black text-slate-400 uppercase mb-3 tracking-wider"
+                    >Project Details</label
+                  >
+                  <textarea
+                    name="message"
+                    rows="4"
+                    required
+                    class="w-full px-6 py-4 rounded-2xl bg-slate-50 border border-slate-200 focus:border-teal-500 focus:ring-4 focus:ring-teal-500/10 outline-none transition-all font-medium"
+                    placeholder="Tell us about your requirements..."
+                  ></textarea>
                 </div>
-                <button id="submit-btn" type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-black text-xl py-6 rounded-2xl transition-all shadow-xl shadow-teal-100 transform hover:-translate-y-1 flex items-center justify-center">
+                <button
+                  id="submit-btn"
+                  type="submit"
+                  class="w-full bg-teal-600 hover:bg-teal-700 text-white font-black text-xl py-6 rounded-2xl transition-all shadow-xl shadow-teal-100 transform hover:-translate-y-1 flex items-center justify-center"
+                >
                   <span id="btn-text">Send Inquiry</span>
                 </button>
               </form>
@@ -1187,126 +1335,182 @@
         </div>
       </div>
     </section>
-  
-  
+
     <script>
-        const btn = document.getElementById('submit-btn');
-        const btnText = document.getElementById('btn-text');
-        const contactForm = document.getElementById('contact-form');
+      const btn = document.getElementById("submit-btn");
+      const btnText = document.getElementById("btn-text");
+      const contactForm = document.getElementById("contact-form");
 
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
+      contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
 
-            // UI Loading State
-            btnText.innerHTML = '<span class="loading-spinner"></span> Sending...';
-            btn.disabled = true;
-            btn.style.opacity = "0.7";
+        // UI Loading State
+        btnText.innerHTML = '<span class="loading-spinner"></span> Sending...';
+        btn.disabled = true;
+        btn.style.opacity = "0.7";
 
-            const serviceID = 'service_ophdsbp';
-            const templateID = 'template_sqcj8tm';
+        const serviceID = "service_ophdsbp";
+        const templateID = "template_sqcj8tm";
 
-            emailjs.sendForm(serviceID, templateID, this)
-                .then(() => {
-                    // UI Success State
-                    btnText.innerText = 'Inquiry Sent Successfully!';
-                    btn.classList.replace('bg-teal-600', 'bg-green-600');
-                    btn.style.opacity = "1";
-                    contactForm.reset();
-                    
-                    setTimeout(() => {
-                        btnText.innerText = 'Send Inquiry';
-                        btn.disabled = false;
-                        btn.classList.replace('bg-green-600', 'bg-teal-600');
-                    }, 5000);
-                }, (err) => {
-                    // UI Error State
-                    btnText.innerText = 'Error Sending';
-                    btn.disabled = false;
-                    btn.style.opacity = "1";
-                    btn.classList.replace('bg-teal-600', 'bg-red-600');
-                    console.error("EmailJS Error:", err);
-                });
-        });
+        emailjs.sendForm(serviceID, templateID, this).then(
+          () => {
+            // UI Success State
+            btnText.innerText = "Inquiry Sent Successfully!";
+            btn.classList.replace("bg-teal-600", "bg-green-600");
+            btn.style.opacity = "1";
+            contactForm.reset();
+
+            setTimeout(() => {
+              btnText.innerText = "Send Inquiry";
+              btn.disabled = false;
+              btn.classList.replace("bg-green-600", "bg-teal-600");
+            }, 5000);
+          },
+          (err) => {
+            // UI Error State
+            btnText.innerText = "Error Sending";
+            btn.disabled = false;
+            btn.style.opacity = "1";
+            btn.classList.replace("bg-teal-600", "bg-red-600");
+            console.error("EmailJS Error:", err);
+          },
+        );
+      });
     </script>
-   
-   
-
 
     <!-- Footer -->
     <footer class="bg-slate-900 py-20 border-t border-slate-800">
-  <div class="container mx-auto px-6">
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
-      <div class="col-span-1 md:col-span-2">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="logo-box footer">
-            <img src="logo.png" alt="Boxhub Logo" class="logo-box" />
+      <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+          <div class="col-span-1 md:col-span-2">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="logo-box footer">
+                <img src="logo.png" alt="Boxhub Logo" class="logo-box" />
+              </div>
+              <span class="font-black text-2xl text-white tracking-tight"
+                >BOXHUB</span
+              >
+            </div>
+            <p class="text-slate-400 text-lg max-w-sm leading-relaxed">
+              Providing professional-grade printing solutions for businesses
+              across the Philippines since 2020.
+            </p>
           </div>
-          <span class="font-black text-2xl text-white tracking-tight">BOXHUB</span>
+
+          <div>
+            <h4
+              class="font-black text-white mb-8 uppercase tracking-widest text-sm"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-4">
+              <li>
+                <a
+                  href="#about"
+                  class="text-slate-400 hover:text-teal-400 transition-colors font-medium"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-slate-400 hover:text-teal-400 transition-colors font-medium"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#clients"
+                  class="text-slate-400 hover:text-teal-400 transition-colors font-medium"
+                  >Our Clients</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-slate-400 hover:text-teal-400 transition-colors font-medium"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="font-black text-white mb-8 uppercase tracking-widest text-sm"
+            >
+              Contact Us
+            </h4>
+            <div class="space-y-4">
+              <div class="flex items-center gap-3 group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14b8a6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="transition-transform group-hover:scale-110"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+                <a
+                  class="text-slate-400 font-medium hover:text-teal-400 transition-colors"
+                >
+                  boxhubjandv@gmail.com
+                </a>
+              </div>
+
+              <div class="flex items-center gap-3 group">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#14b8a6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="transition-transform group-hover:scale-110"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <a
+                  class="text-slate-400 font-medium hover:text-teal-400 transition-colors"
+                >
+                  02-70062614
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="text-slate-400 text-lg max-w-sm leading-relaxed">
-          Providing professional-grade printing solutions for businesses
-          across the Philippines since 2020.
-        </p>
-      </div>
 
-      <div>
-        <h4 class="font-black text-white mb-8 uppercase tracking-widest text-sm">
-          Quick Links
-        </h4>
-        <ul class="space-y-4">
-          <li>
-            <a href="#about" class="text-slate-400 hover:text-teal-400 transition-colors font-medium">About Us</a>
-          </li>
-          <li>
-            <a href="#services" class="text-slate-400 hover:text-teal-400 transition-colors font-medium">Services</a>
-          </li>
-          <li>
-            <a href="#clients" class="text-slate-400 hover:text-teal-400 transition-colors font-medium">Our Clients</a>
-          </li>
-          <li>
-            <a href="#contact" class="text-slate-400 hover:text-teal-400 transition-colors font-medium">Contact</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="font-black text-white mb-8 uppercase tracking-widest text-sm">
-          Contact Us
-        </h4>
-        <div class="space-y-4">
-          <div class="flex items-center gap-3 group">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-110">
-              <rect width="20" height="16" x="2" y="4" rx="2"></rect>
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-            </svg>
-            <a  class="text-slate-400 font-medium hover:text-teal-400 transition-colors">
-              boxhubjandv@gmail.com
-            </a>
-          </div>
-
-          <div class="flex items-center gap-3 group">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:scale-110">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            <a  class="text-slate-400 font-medium hover:text-teal-400 transition-colors">
-              02-70062614
-            </a>
+        <div
+          class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <p class="text-slate-500 text-sm font-medium">
+            © 2026 Boxhub Printing Services. All rights reserved.
+          </p>
+          <div class="flex gap-8">
+            <span
+              class="text-slate-500 text-sm font-medium cursor-pointer hover:text-teal-400"
+              >Privacy Policy</span
+            >
+            <span
+              class="text-slate-500 text-sm font-medium cursor-pointer hover:text-teal-400"
+              >Terms of Service</span
+            >
           </div>
         </div>
       </div>
-    </div>
-
-    <div class="pt-12 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-      <p class="text-slate-500 text-sm font-medium">
-        © 2026 Boxhub Printing Services. All rights reserved.
-      </p>
-      <div class="flex gap-8">
-        <span class="text-slate-500 text-sm font-medium cursor-pointer hover:text-teal-400">Privacy Policy</span>
-        <span class="text-slate-500 text-sm font-medium cursor-pointer hover:text-teal-400">Terms of Service</span>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
     <script>
       // Navbar Scroll Logic
       const navbar = document.getElementById("navbar");
@@ -1355,7 +1559,6 @@
 
       menuClose.addEventListener("click", closeMenu);
 
-     
       // Intersection Observer for Animations
       const observerOptions = {
         threshold: 0.1,
@@ -1373,10 +1576,6 @@
       document.querySelectorAll(".service-card").forEach((card) => {
         observer.observe(card);
       });
-    
-    
-
-
     </script>
   </body>
 </html>

@@ -146,18 +146,68 @@ body {
 
 /* Services */
 
-#services {
-  background: linear-gradient(180deg, #1aa1a8 0%, #158f96 100%);
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #ffffff;
+  color: #0f172a;
 }
 
-/* Service Cards */
+/* Modal Animation Logic */
+#modal-overlay {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(0px);
+}
+#modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(12px);
+}
+#modal-container {
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: scale(0.95) translateY(30px);
+}
+#modal-overlay.active #modal-container {
+  transform: scale(1) translateY(0);
+}
+
+/* Service Card Interactions */
 .service-card {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .service-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-8px);
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.05),
+    0 8px 10px -6px rgb(0 0 0 / 0.05);
+}
+
+/* Gallery Image Hover */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.gallery-item img {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom Scrollbar */
+.modal-content-area::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content-area::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+.modal-content-area::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 20px;
+  border: 2px solid #f8fafc;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 /* Custom Scrollbar */
