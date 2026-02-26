@@ -7,7 +7,7 @@
       name="description"
       content="Boxhub Printing Services - Professional offset, digital, and custom printing solutions in the Philippines. Quality prints, fast delivery."
     />
-    <title>Boxhub Printing Services</title>
+    <title>Boxhub Printing Servicess</title>
 
      
     <!-- External Libraries Whitelist -->
@@ -926,12 +926,13 @@
   </div>
 </section>
 
+<!--SERVICES FUNC-->
 <script>
   function toggleService(id) {
     const allDetails = document.querySelectorAll('.service-detail');
     const target = document.getElementById(id);
 
-    // 1. Isara muna ang lahat (Para isa lang ang bukas at iwas gulo)
+    
     allDetails.forEach(detail => {
       if (detail.id !== id) {
         detail.classList.add('max-h-0', 'opacity-0');
@@ -939,17 +940,17 @@
       }
     });
 
-    // 2. I-toggle yung pinindot mo
+   
     if (target.classList.contains('max-h-0')) {
-      // BUKAS
+     
       target.classList.remove('max-h-0', 'opacity-0');
       target.classList.add('max-h-[2000px]', 'opacity-100');
-      // Smooth Scroll
+      
       setTimeout(() => {
         target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }, 400);
     } else {
-      // SARA
+     
       target.classList.add('max-h-0', 'opacity-0');
       target.classList.remove('max-h-[2000px]', 'opacity-100');
     }
@@ -1185,7 +1186,8 @@
         </div>
       </div>
     </section>
-
+  
+  
     <script>
         const btn = document.getElementById('submit-btn');
         const btnText = document.getElementById('btn-text');
